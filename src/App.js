@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import PropTypes from 'prop-types';
+import Button from '@material-ui/core/Button';
 
 import logo from './logo.svg';
 import './App.css';
@@ -18,15 +19,20 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+      <div className='App'>
+        <header className='App-header'>
+          <img src={logo} className='App-logo' alt='logo' />
+          <h1 className='App-title'>Welcome to Events Manager</h1>
         </header>
-        <p className="App-intro">
-          To check out events in Washington DC, Maryland area, <button onClick={this.handleClick} >Click Me! </button>
-        </p>
-        <EventList/>
+        <div className='App-main'>
+          <div className='App-intro'>
+            <p className='text'> To check out events in Washington DC, Maryland area </p>
+            <Button className='click-me-button' size='small' variant='raised' color='primary' onClick={this.handleClick}>
+              Click me!
+            </Button>
+          </div>
+          <div className='App-events-list'><EventList/></div>
+        </div>
       </div>
     );
   }
