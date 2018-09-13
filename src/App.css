@@ -19,7 +19,14 @@
 }
 
 .App-intro {
+  padding: 15px;
+}
+.text {
   font-size: large;
+}
+.click-me-button {
+  padding: 15px;
+  margin: 10px;
 }
 
 @keyframes App-logo-spin {
