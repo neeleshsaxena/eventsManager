@@ -4,8 +4,11 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^1.5.1",
+    "@material-ui/styles": "^4.3.0",
+    "lodash": "^4.17.15",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-power-select": "^1.0.0-beta.16",
     "react-redux": "^5.0.7",
     "react-scripts": "1.1.4",
     "redux": "^4.0.0",
