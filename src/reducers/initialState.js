@@ -1,3 +1,5 @@
 export default {
-    events: []
+    events: [],
+    cityList:['Washington', 'New York'],
+    selectedCity: null
   };
