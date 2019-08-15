@@ -1,1 +1,3 @@
 export const RECEIVE_EVENTS = 'RECEIVE_EVENTS';
+export const SELECT_CITY = 'SELECT_CITY';
+export const POPULATE_CITIES = 'POPULATE_CITIES';

@@ -2,14 +2,12 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+} */
 
 .App-header {
   background-color: #222;
-  height: 150px;
   padding: 20px;
   color: white;
 }
@@ -20,6 +18,9 @@
 
 .App-intro {
   padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .text {
   font-size: large;
@@ -29,7 +30,25 @@
   margin: 10px;
 }
 
+.city-power-select {
+  margin-left: 15px;
+  width: 400px;
+  align-self: center;
+}
+
+.PowerSelect PowerSelect {
+  padding: 0;
+}
+.PowerSelect__Trigger span{
+  position: relative;
+  bottom: 5px;
+}
+
+.PowerSelect__SearchInputContainer{
+  width: 90%;
+}
+/* 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+} */
