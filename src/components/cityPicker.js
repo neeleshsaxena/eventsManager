@@ -9,13 +9,7 @@ import 'react-power-select/dist/react-power-select.css'
 
 class cityPicker extends React.Component {
 
-    constructor(props) {
-        super(props);
-        // This binding is necessary to make `this` work in the callback
-        this.handleChange = this.handleChange.bind(this);
-      }
-
-    handleChange(option) {
+    handleChange = (option) => {
       this.props.cityActions.selectCity(option);
     }
 

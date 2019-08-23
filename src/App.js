@@ -12,8 +12,7 @@ import CityPicker from './components/cityPicker';
 import 'react-power-select/dist/react-power-select.css'
 
 class App extends Component {
-  constructor(props) {
-    super(props);
+  componentDidMount() {
     this.props.cityAction.fetchCityList();
   }
 
