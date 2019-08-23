@@ -6,6 +6,14 @@ function extractNames(action) {
   return venues.map((v) => v.city).map((c) => c.name);
 }
 
+function duplicates(city, currIndex, list) {
+  const index = list.findIndex((c) => c === city);
+    if (index === currIndex){
+      return true;
+    }
+    return false;
+}
+
 export default function selectCity(state = initialState, action) {
   let newState;
   switch (action.type) {
@@ -17,7 +25,7 @@ export default function selectCity(state = initialState, action) {
       };
       return newState;
     case POPULATE_CITIES:
-      const list = extractNames(action)
+      const list = extractNames(action).filter(duplicates);
       newState = {
           ...state,
           cityList: list

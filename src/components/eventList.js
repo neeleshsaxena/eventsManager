@@ -67,6 +67,5 @@ function mapStateToProps(state) {
 
 // export default postList;
 export default connect(
-  mapStateToProps,
-  undefined
+  mapStateToProps
 )(eventList);
