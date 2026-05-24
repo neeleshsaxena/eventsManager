@@ -1,7 +1,7 @@
 import * as types from './actionTypes';
 import * as eventsActions from './fetchEvents';
 
-const URL = 'https://app.ticketmaster.com/discovery/v2/venues.json?countryCode=US&apikey=REDACTED';
+const URL = `https://app.ticketmaster.com/discovery/v2/venues.json?countryCode=US&apikey=${process.env.REACT_APP_TICKETMASTER_API_KEY}`;
 
 export function selectCity({ option }) {
   return dispatch => {

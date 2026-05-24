@@ -1,8 +1,7 @@
 import * as types from './actionTypes';
 
-// const url = 'https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&ID=47&apikey=REDACTED';
 const URL = 'https://app.ticketmaster.com/discovery/v2/events.json?';
-const key = 'apikey=REDACTED';
+const key = `apikey=${process.env.REACT_APP_TICKETMASTER_API_KEY}`;
 const classification = 'classificationName=music';
 
 function formURL(city) {
